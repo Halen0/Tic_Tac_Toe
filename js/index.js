@@ -71,7 +71,7 @@ function lose(){
         (cards[0].textContent == "O" && cards[4].textContent == "O" && cards[8].textContent == "O")||
         (cards[2].textContent == "O" && cards[4].textContent == "O" && cards[6].textContent == "O")
     ){
-        alert("win " + name2.textContent);
+        alert("Win " + name2.textContent);
         reset();
         score_player2 += 1;
         score2.textContent = score_player2;
