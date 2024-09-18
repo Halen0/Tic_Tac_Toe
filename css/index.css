@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content{
+    background-color: green;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.player{
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.btnReset{
+    background: none;
+    border: none;
+    background-color: #03fcdf;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.btnReset:hover{
+    background-color: #04bda7;
+}
+.player>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.game-play{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card{
+    background-color: lightgray;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
