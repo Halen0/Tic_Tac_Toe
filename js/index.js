@@ -35,6 +35,7 @@ cards.forEach(element => {
         }
         win();
         lose();
+        draw();
     });
 });
 
@@ -75,6 +76,17 @@ function lose(){
         reset();
         score_player2 += 1;
         score2.textContent = score_player2;
+    }
+}
+
+function draw(){
+    if(
+        (cards[0].textContent !== "" && cards[1].textContent !== "" && cards[2].textContent !== "")&&
+        (cards[3].textContent !== "" && cards[4].textContent !== "" && cards[5].textContent !== "")&&
+        (cards[6].textContent !== "" && cards[7].textContent !== "" && cards[8].textContent !== "")
+    ){
+        alert("Draw");
+        reset();
     }
 }
 
